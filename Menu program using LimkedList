@@ -1,0 +1,45 @@
+import java.util.*;
+class Coding1
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        LinkedList<Integer>x=new LinkedList<Integer>();
+        int n,ch;
+        do
+        {
+            System.out.println("1.BeginInsert\n 2.EndInsert\n 3.Display\n 4.Exit\n 5.PositionInsert\n 6.BeginDelete\n 7.Exit\n.......Enter your Choice:");
+            ch=sc.nextInt();
+            switch(ch)
+            {
+                case 1:System.out.println("Enter n value:");
+                n=sc.nextInt();
+                x.addFirst(n);
+                break;
+                case 2:System.out.println("Enter n value:");
+                n=sc.nextInt();
+                x.add(n);
+                break;
+                case 3:System.out.println("Enter n value:");
+                n=sc.nextInt();
+                x.add(n);
+                case 4:System.out.println("Enter n value:");
+                n=sc.nextInt();
+                x.add(n);
+                case 5:System.out.println("Enter n value:");
+                n=sc.nextInt();
+                x.add(n);
+                case 6:System.out.println("Enter n value:");
+                n=sc.nextInt();
+                x.add(n);
+                case 7:System.out.println("Enter n value:");
+                n=sc.nextInt();
+                x.addLast(n);
+                case 8:System.out.println(x);
+                default:System.out.println("Invalid Choice");
+            }
+            System.out.println("1.BeginInsert\n 2.EndInsert\n 3.Display\n 4.Exit\n.......Enter your choice:");
+            ch=sc.nextInt();
+        }while(ch<4);
+    }
+}
